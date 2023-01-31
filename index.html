@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>EasyHaus | Tu comparador inmobiliario</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/resources/icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="description" content="EasyHaus es una plataforma que te permite comparar inmobiliarias de una forma sencilla y rápida.">
+        <meta name="keywords" content="Inmobiliaria, Comparar, Comparador, Inmobiliarias, EasyHaus, EasyHaus.com, EasyHaus.com.es, EasyHaus.com.es.es">
+        <meta name="author" content="Nicolás Sela">
+        <meta name="robots" content="index, follow">
+    </head>
+    <body>
+        <div class="NombreWeb">
+            <a href="index.html"> <h1>EasyHaus™</h1>
+            <hr>
+            <p>Tu comparador inmobiliario</p>
+        </div>
+        <nav class="Menu">
+            <ul>
+                <li><a href="index.html">Comparar</a></li>
+                <li><a href="agencia.html">¿Eres Agencia?</a></li>
+                <li><a href="contacto.html">Team EasyHaus</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+        <div class="Contenido">
+            <h1>Compara de una forma sencilla y rápida</h1>
+            <h2>VENDE BIEN</h2>
+            <p>Comparar inmobiliarias nunca había sido tan fácil.</p>
+            <p>Según tus preferencias y necesidades te ordenamos las agencias por orden de relevancia.</p>
+            <p1>Compara a tu manera en 1 click.</p1>
+        </div>
+        
+        <div class="FiltrosBack">
+            <!--Empty block-->
+        </div>
+        <div class="FiltrosFront">
+            <h1>Encuentra tu Inmobiliaria</h1>
+            <p>Ordenamos las agencias en función de tus preferencias</p>
+            <div class="Filtros1">
+                <h2>Selecciona una opción</h2>
+                    <input type="checkbox" id="TarifaFija" name="TarifaFija" value="Tarifa Fija">
+                    <label for="TarifaFija">Tarifa Fija</label><br>
+                    <input type="checkbox" id="Comisión" name="Comisión" value="Comisión">
+                    <label for="Comisión">Comisión</label><br>
+                    <option value="Comisión de.. ">Comisión de..</option>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="porcentaje">
+                    <label for="porcentaje">%</label><br>
+                    <p1>Valor: <span id="demo"></span></p1>
+                    <script>
+                        var slider = document.getElementById("porcentaje");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value;
+                        
+                        slider.oninput = function() {
+                          output.innerHTML = this.value;
+                        }
+                    </script>
+            </div>
+            <div class="FiltroTipoInmobiliaria">
+                <h2>Selecciona el tipo de inmobiliaria</h2>
+                <input type="checkbox" id="Online" name="Inmobiliaria Online" value="Online">
+                <label for="Online">Inmobiliaria Online</label><br>
+                <input type="checkbox" id="Fisica" name="Inmobiliaria Fisica" value="Fisica">
+                <label for="Fisica">Inmobiliaria Física</label><br>
+            </div>
+            <div class="FiltroZonaInmobiliaria">
+                <h2>Selecciona una opción</h2>
+                <input type="checkbox" id="De la zona" name="Inmobiliaria de la zona" value="De la zona">
+                <label for="De la zona">Inmobiliaria de la zona</label><br>
+                <input type="checkbox" id="Cercana" name="Inmobiliaria cercana" value="Cercana">
+                <label for="Cercana">Inmobiliaria Cercana</label><br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "NexaTextBold";
+    src: url(/resources/FontsFree-Net-n1.ttf) format("truetype");
+}
+
+body {
+    background-image: url(../resources/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 254%;
+    background: rgba(9, 32, 63, 0.747);
+    z-index: -1;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /*define the color of the scrollbar to make contrast*/
+    background: rgba(9, 32, 63, 0.747);
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+  }
+
+.NombreWeb{
+    color: rgb(255, 255, 255);
+    font-family: "NexaTextBold", sans-serif;
+}
+
+.NombreWeb h1 {
+    font-size: 280%;
+    font-weight: bold;
+    font-family: "NexaTextBold", sans-serif;
+}
+
+.NombreWeb a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.NombreWeb p {
+    font-size: 140%;
+    font-weight: lighter;
+    font-family: 'Times New Roman', sans-serif;
+    margin-top: 0%;
+}
+
+.NombreWeb hr {
+    height: 0.5%;
+    width: 2.5%;
+    background: rgb(255, 255, 255);
+    margin-top: -2.2%;
+    margin-left: 0%;
+}
+
+.Menu {
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    font-size: 140%;
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.Menu li {
+    display: inline;
+    margin-left: 5;
+    margin-right: 5;
+}
+.Menu a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.Menu a:hover{
+    color: rgb(3, 245, 172);
+    /*dynamic underline animation*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.Contenido {
+    position: absolute;
+    top: 50%;
+    text-align: left;
+}
+
+.Contenido h1 {
+    color: rgb(3, 245, 172);
+    font-size: 140%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+}
+
+.Contenido h2 {
+    color: rgb(3, 245, 172);
+    font-size: 530%;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+.Contenido p {
+    color: rgb(255, 255, 255);
+    font-size: 140%;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -1%;
+    margin-right: 29%;
+}
+
+.Contenido p1 {
+    color: rgb(255, 255, 255);
+    font-size: 140%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -2%;
+    margin-inline: 0%;
+}
+
+.FiltrosBack {
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 20px solid white;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}
+
+.FiltrosFront {
+    background: rgb(8, 22, 43);
+    width: 38%;
+    height: auto;
+    position: absolute;
+    top: 37%;
+    right: 0%;
+    padding: 2%;
+    border-left: 20px solid rgb(8, 22, 43);
+    border-bottom: 60px solid rgb(8, 22, 43);
+    border-top: 20px solid rgb(8, 22, 43);
+}
+
+.FiltrosFront h1 {
+    color: rgb(3, 245, 172);
+    font-size: 350%;
+    font-family: "NexaTextBold", sans-serif;
+    margin-bottom: 2%;
+    margin-right: 9%;
+    /*Reduce the space between lines of text*/
+    line-height: 1.1;
+}
+
+.FiltrosFront p {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -1%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+}
+
+.FiltrosFront p1 {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -1%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+}
+
+.FiltrosFront h2 {
+    color: rgb(3, 245, 172);
+    font-size: 120%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+input[type="checkbox"] {
+    display: none;
+    font-family: "NexaTextBold", sans-serif;
+  }
+  
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(3, 245, 172);
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    background-color: rgb(3, 245, 172);
+  }
+  
+  input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 3px rgb(0, 0, 0);
+  }
+
+.FiltrosFront label {
+    color: rgb(3, 245, 172);
+    font-size: 120%;
+    font-stretch: narrower;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: -3%;
+    margin-right: 15%;
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 20%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(3, 245, 172);
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(3, 245, 172);
+    cursor: pointer;
+  }
+
+.FiltrosFront option {
+    color: rgb(3, 245, 172);
+    font-size: 120%;
+    font-weight: lighter;
+    font-family: "NexaTextBold", sans-serif;
+    margin-top: 0%;
+    margin-right: 15%;
+    margin-bottom: 0%;
+}
+
+
+
+
