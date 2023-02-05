@@ -3,6 +3,10 @@
     src: url(/resources/FontsFree-Net-n1.ttf) format("truetype");
 }
 
+@media only screen and (max-width: 768px) {
+    
+  }
+
 body {
     background-image: url(../resources/background.jpg);
     background-repeat: no-repeat;
@@ -285,7 +289,3 @@ input[type="range"] {
     margin-right: 15%;
     margin-bottom: 0%;
 }
-
-
-
-
